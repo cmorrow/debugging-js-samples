@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- build:css css/libraries.min.css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app_override.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <div class="row">
+        <div class="small-12 columnsouterB">
+            <img class="left" src="images/debugging-js.png" alt="">
+            <h2 class="text-right right">The Console</h2>
+        </div>
+    </div>
+    <div class="row">
+      <div class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
+        <div class="panel radius">
+          <h3 id="qunit-header">Authentication Form Test Suite</h3>
+          <h2 id="qunit-banner"></h2>
+          <div id="qunit-testrunner-toolbar"></div>
+          <h2 id="qunit-userAgent"></h2>
+          <ol id="qunit-tests"></ol>
+          <div id="qunit-test-area"></div>
+         
+          <div id="qunit-fixture">
+            <!-- A slimmed down form mock is used so there are 
+                 form elements to attach event handlers to -->
+            <form id="authenticationForm">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username"></input>
+              <label for="username">Password</label>
+              <input type="password" id="password" name="password"></input>
+              <button class="submit">Submit</button>
+            </form>
+
+            <p><a href="tests/form.html">QUnit Form <i class="fa fa-chevron-right"></i></a></p>
+         
+            <p id="username_password_required" style="display: none;">
+              Both the username and password are required.
+            </p>
+         
+            <p id="authentication_success" style="display: none;">
+              You have successfully authenticated!
+            </p>
+         
+            <p id="authentication_failure" style="display: none;">
+              This username/password combination is not correct.
+            </p>
+         
+            <p id="authentication_error" style="display: none;">
+              There was a problem authenticating the user, please try again later.
+            </p>
+          </div>
+        </div>
+        <!-- end panel -->
+      </div>
+    </div>
+    <!-- Include the ajax mock so no XHR requests are actually made -->
+    <script src="js/ajax-mock.js"></script>
+
+    <!-- Load page scripts -->
+    <script src="js/authentication-form.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
