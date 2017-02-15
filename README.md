@@ -1,4 +1,7 @@
+
 ### Debugging JS Code Samples
+
+Code samples used in my Debugging JS YouTube video at https://youtu.be/-q1z8BPFItw
 
 #### Installation
 Install NodeJS if not already installed
