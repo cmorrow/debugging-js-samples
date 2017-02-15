@@ -1,0 +1,17 @@
+{
+  "name": "Debugging JS Sample Code",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "Chris Morrow",
+    "email": "chris@chrisjmorrow.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmorrow/debugging-js-samples"
+  },
+  "devDependencies": {
+
+  }
+}
