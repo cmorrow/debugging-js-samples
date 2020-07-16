@@ -1,7 +1,7 @@
 // Instantiate form-authentication object
-(function() {
+(function () {
   "use strict";
- 
-  var authenticationForm = Object.create(AuthenticationForm);
+
+  const authenticationForm = Object.create(AuthenticationForm);
   authenticationForm.init();
-}());
+})();
